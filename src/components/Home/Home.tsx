@@ -38,8 +38,8 @@ const MainText = styled('div')({
     transform: 'translate(-50%, -50%)',
     color: 'white'
 })
-
-
+ // Desired word to learn in espanol form
+ 
 // 1st functional based component!
 export const Home = (project: Project) => {
 
@@ -51,7 +51,7 @@ export const Home = (project: Project) => {
             <Main>
                 <MainText>
                     <Typography variant='h3'> { project.title }</Typography>
-                    <Button sx={{ marginTop: '10px'}} component={Link} to={"/mastered"} variant='contained'>Ready, Set, Learn </Button>
+                    <Button sx={{ marginTop: '10px'}} component={Link} to={"/collection"} variant='contained'>Ready, Set, Learn! </Button>
                 </MainText>
             </Main>
         </Root>

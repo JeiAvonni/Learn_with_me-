@@ -38,14 +38,14 @@ const authStyles = {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center top 5px',
         position: 'absolute',
-        marginTop: '10px'
+        marginTop: '5px'
     },
     stack: {
         width: '400px',
         marginTop: '100px',
         marginRight: 'auto',
         marginLeft: 'auto',
-        color: 'orange'
+        color: 'Yellow'
     },
     button: {
         width: '175px',
