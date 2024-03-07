@@ -1,17 +1,59 @@
+// Imports
 import * as _React from 'react'; 
+import { styled } from '@mui/system'; 
+import { Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom'; 
+
+// internal imports
+import projectImage from '../../assets/Image/Bugs_bunny.jpg'
+
+import { NavBar } from '../sharedComponents';
 
 interface Project {
     title: string
 }
 
+// Styling components
+const Root = styled('div')({
+    padding: 0,
+    margin: 0
+})
 
-// This is our firsst functional based component!
+const Main = styled('main')({
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(${projectImage});`,
+    width: '100%',
+    height: '100%',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center top 5px', 
+    position: 'absolute',
+    marginTop: '10px'
+})
+
+const MainText = styled('div')({
+    textAlign: 'center',
+    position: 'relative',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    color: 'white'
+})
+
+
+// 1st functional based component!
 export const Home = (project: Project) => {
 
-    // return is always HTML & it can have ONLY 1 parent div 
     return (
-        <div>
-            <h1> { project.title }</h1>
-        </div>
+        <Root>
+            <NavBar>
+                
+            </NavBar>
+            <Main>
+                <MainText>
+                    <Typography variant='h3'> { project.title }</Typography>
+                    <Button sx={{ marginTop: '10px'}} component={Link} to={"/mastered"} variant='contained'>Ready, Set, Learn </Button>
+                </MainText>
+            </Main>
+        </Root>
     )
 }
