@@ -22,10 +22,11 @@ const Root = styled('div')({
 const Main = styled('main')({
     backgroundImage: `linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(${projectImage});`,
     width: '100%',
-    height: '100%',
+    height: '98%',
+    length: '100%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center top 5px', 
+    backgroundPosition: 'center top 0px', 
     position: 'absolute',
     marginTop: '10px'
 })

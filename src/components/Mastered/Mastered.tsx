@@ -6,7 +6,7 @@ import * as _React from 'react';
 export const Mastered = () => {
     return (
         <div>
-            <h1 style={{marginTop: '50px'}}>Pick a topic you would like to learn? </h1>
+            <h1 style={{marginTop: '50px'}}>Pick a topic you would like to learn to master? </h1>
         </div>
     )
 }

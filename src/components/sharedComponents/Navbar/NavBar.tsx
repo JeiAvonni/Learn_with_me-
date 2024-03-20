@@ -19,7 +19,6 @@ import {
 import { useNavigate } from 'react-router-dom';
 import SchoolIcon from '@mui/icons-material/School';
 import SpellcheckIcon from '@mui/icons-material/Spellcheck';
-import CottageIcon from '@mui/icons-material/Cottage';
 import { signOut, getAuth } from 'firebase/auth';
 
 
@@ -130,11 +129,11 @@ export const NavBar = () => {
     ]
 
     let signInText = 'Sign In'
-       // ADD THIS
+    
     if (myAuth === 'true') { 
          signInText = 'Sign Out'
     }
- //ADD THIS
+
     const signInButton = async () => {
         if (myAuth === 'false') {
             navigate('/auth')
@@ -172,7 +171,7 @@ export const NavBar = () => {
                     alignItems='center'
                     sx={navStyles.signInStack} >
                     <Typography variant='body2' sx={{ color: 'inherit' }}>
-                        Your're doing great! Sign in to Keep learning!
+                        Your're doing great! Sign in too Keep learning!
                     </Typography>
                     <Button
                         variant='contained'

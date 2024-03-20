@@ -172,7 +172,7 @@ const SignIn = () => {
                 setMessage(`Successfully logged in ${user.email}`)
                 setMessageType('success')
                 setOpen(true)
-                setTimeout(() => navigate('/shop'), 2000)
+                setTimeout(() => navigate('/home'), 2000)
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -235,7 +235,7 @@ const SignUp = () => {
                 setMessage(`Successfully logged in ${user.email}`)
                 setMessageType('success')
                 setOpen(true)
-                setTimeout(() => navigate('/shop'), 2000)
+                setTimeout(() => navigate('/home'), 2000)
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -293,7 +293,7 @@ export const Auth = (props: Props) => {
                     </Typography>
                     <br />
                     <Typography variant='h5'>
-                        Keep track of your mastered work here!
+                        Sign in to keep track of your collections and progress!
                     </Typography>
                     <br />
                     <GoogleButton open={open} onClick={ () => setOpen(false)} />
